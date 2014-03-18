@@ -7,6 +7,7 @@
 <body>
   <h1>Life is too short to play Sudoku</h1>
   <div id="sudoku">
+    <form action='/' method='post'>
   <!-- one div for each row -->
   <% 3.times do |row| %>
     <div class='row'>
@@ -17,12 +18,7 @@
          <% 3.times do |cell_row| %>
               <div class="cell-row">
              <% 3.times do |cell| %>
-                  <div class="cell">
-                    <!-- every cell will have an input field -->
-                    <% cell_index = row * 27 + box * 3 + cell_row * 9 + cell %>
-                    <% cell_value = @current_solution[cell_index] %>
-                    <input type="text" maxlength="1" autocomplete='off' value="<%= cell_value %>">
-                  </div>
+               <%= partial :cell, :locals=>{:cell_index => row*27+box*3+cell_row*9+cell} %>
                 <% end %>
               </div>
             <% end %>
@@ -30,6 +26,7 @@
         <% end %>
       </div>
     <% end %>
+    <button>Check solution</button>
   </div>
 </body>
 </html>
