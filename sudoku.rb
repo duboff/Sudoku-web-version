@@ -26,6 +26,10 @@ helpers do
     value.to_i == 0 ? '' : value
   end
 
+  def read_only(puzzle_value)
+    'readonly' if puzzle_value.to_i != 0
+  end
+
 end
       
 def random_sudoku
@@ -74,8 +78,14 @@ def prepare_to_check_solution
   session[:check_solution] = nil
 end
 
+def game_saved_warning
+  flash[:notice] = "Game saved!" if !session[:check_solution]
+end
+
+
 get '/' do
   session[:difficulty] ||= :easy
+  game_saved_warning
   prepare_to_check_solution
   generate_new_puzzle_if_necessary(session[:difficulty])
   @current_solution = session[:current_solution] || session[:puzzle]
@@ -88,6 +98,7 @@ post '/' do
   cells = box_order_to_row_order(params["cell"])
   session[:current_solution] = cells.map {|value| value.to_i }.join
   session[:check_solution] = params[:check] == 'true'
+  session[:current_solution] = session[:puzzle] if params[:restart] == 'true'
   redirect to('/')
 end
 
@@ -108,6 +119,10 @@ get '/solution' do
   @solution = session[:solution]
   @puzzle = session[:puzzle]
   erb :index
+end
+
+get '/rules' do
+  erb :rules
 end
 
 
