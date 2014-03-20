@@ -87,7 +87,7 @@ end
 post '/' do
   cells = box_order_to_row_order(params["cell"])
   session[:current_solution] = cells.map {|value| value.to_i }.join
-  session[:check_solution] = true
+  session[:check_solution] = params[:check] == 'true'
   redirect to('/')
 end
 
@@ -108,12 +108,6 @@ get '/solution' do
   @solution = session[:solution]
   @puzzle = session[:puzzle]
   erb :index
-end
-
-post '/savegame' do
-  cells = box_order_to_row_order(params["cell"])
-  session[:current_solution] = cells.map {|value| value.to_i }.join
-    redirect to('/')
 end
 
 
