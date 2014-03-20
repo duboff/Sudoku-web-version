@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Sudoku</title>
+  <link href='/stylesheets/application.css' rel='stylesheet' type='test/css'>
+
+</head>
+
+<body>
+  <h1>Life is too short to play Sudoku</h1>
+<%= yield %>
+<h1>Play another game</h1>
+    <form action='/newgame' method='post'>
+    <button name='difficulty' value='hard'>Hard</button>     <button name='difficulty' value='easy'>Easy</button>
+    </form>
+    <form action='/savegame' method='post'><button>Save</button></form>
+    <a href="/solution"> Solve </a>
+  </body>
+</html>

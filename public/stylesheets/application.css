@@ -1,4 +1,4 @@
-div.box, div.cell {
+div.cell {
   display: inline-block;
 }
 
@@ -19,13 +19,37 @@ div.box, div.cell {
 body {
   text-align: center;
   font-family: Arial;
-  color: red;
+  color: black;
 }
 
 .incorrect {
   background-color: yellow;
 }
 
-.value_provided {
+.value-provided {
   background-color: #DDD;
+}
+
+.box {
+  outline-style: ridge;
+  outline-width: thick;
+  outline-color: grey;
+  display: inline-block;
+}
+
+#flash {
+  margin: 20px;
+  color: green;
+}
+
+button {
+  margin-top: 10px;
+  display: inline;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial;
+  color: black;
 }
