@@ -17,7 +17,11 @@ div.cell {
 }
 
 body {
-/*  background-image: url("/images/background.jpeg");*/
+  background-image: url("/images/marvin.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:30% 70%;
+  background-position:right;
   text-align: center;
   font-family: Arial;
   color: black;
@@ -70,9 +74,51 @@ body {
   text-decoration: none;
 }
 #flash {
-  margin: 20px;
-  color: green;
+color: white;
+position:fixed;
+  top:50px;
+  right:100px;
+width: 250px;
+width: 250px;
+height: 70px;
+line-height: 70px;
+padding: 0px;
+background: #FF9A34;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #EB7F7F solid 9px;
 }
+
+#flash:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #FF9A34 transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -15px;
+left: 166px;
+}
+
+#flash:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 23px 23px 0;
+border-color: #EB7F7F transparent;
+display: block;
+width: 0;
+z-index: 0;
+bottom: -32px;
+left: 158px;
+}
+
+
 
 
 h1 {

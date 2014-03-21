@@ -78,33 +78,43 @@ end
 
 def prepare_to_check_solution
   @check_solution = session[:check_solution]
-  if @check_solution
-      flash[:notice] = "Incorrect values are highlighted in yellow"
+  if @check_solution && !won?
+    flash[:notice] = "Incorrect values are in yellow"
+  elsif @check_solution == false
+    flash[:notice] = "Game saved!"
   end
   session[:check_solution] = nil
 end
 
-def game_saved_warning
-  flash[:notice] = "Game saved!" if params[:check] == 'false'
+def won?
+  session[:current_solution] == session[:solution].join
 end
+
+def win_message
+  flash[:notice] = 'Congrats! You won!' 
+end
+
+def give_up_message
+  flash[:notice] = 'Given up? I knew it.' 
+end
+
 
 
 get '/' do
   session[:difficulty] ||= :easy
-  game_saved_warning
+  win_message if won?
   prepare_to_check_solution
   generate_new_puzzle_if_necessary(session[:difficulty])
   @current_solution = session[:current_solution] || session[:puzzle]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
-  redirect to('/win') if @current_solution == @solution
   erb :index
 end
 
 post '/' do
   cells = box_order_to_row_order(params["cell"])
   session[:current_solution] = cells.map {|value| value.to_i }.join
-  session[:check_solution] = params[:check] == 'true'
+  session[:check_solution] = !(params[:check] == 'false')
   session[:current_solution] = session[:puzzle] if params[:restart] == 'true'
   redirect to('/')
 end
@@ -125,6 +135,7 @@ get '/solution' do
   @current_solution = session[:solution]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
+  give_up_message
   erb :index
 end
 
