@@ -9,9 +9,14 @@
   <h1>Life is too short to play Sudoku</h1>
 <%= yield %>
 <h1>Play another game</h1>
-    <form action='/newgame' method='post'>
-    <button name='difficulty' value='hard'>Hard</button>     <button name='difficulty' value='easy'>Easy</button>
-    </form>
-    <a href="/solution"> Solve </a> <a href="/rules"> Rules </a>
+    <div class="menu">
+      <form action='/newgame' method='post'>
+            <button class='btn' name='difficulty' value='easy'>Easy</button><button class='btn' name='difficulty' value='medium'>Medium</button><button class='btn' name='difficulty' value='hard'>Hard</button> 
+      </form>
+       <form action='/rules' method='get'>
+        <button class='btn'>Rules</button>
+      </form>
+    </div>
+  
   </body>
 </html>

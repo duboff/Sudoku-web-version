@@ -40,12 +40,12 @@ def random_sudoku
 end
 
 def puzzle(sudoku, difficulty)
-  game = sudoku.clone
-  x = 30 if difficulty == :easy
-  x = 50 if difficulty == :hard
-  seed = (0...81).to_a.shuffle[0..x]
-  seed.each { |ind| game[ind] = '0'  }
-  game
+  mult = 1 if difficulty == :easy
+  mult = 2 if difficulty == :medium
+  mult = 3 if difficulty == :hard
+  threes = sudoku.each_slice(3).to_a
+  mult.times { threes.each { |three| three[rand(3)] = 0} }
+  threes.flatten
 end
 
 def box_order_to_row_order(cells)
@@ -79,7 +79,7 @@ def prepare_to_check_solution
 end
 
 def game_saved_warning
-  flash[:notice] = "Game saved!" if !session[:check_solution]
+  flash[:notice] = "Game saved!" if params[:check] == 'false'
 end
 
 
@@ -91,6 +91,7 @@ get '/' do
   @current_solution = session[:current_solution] || session[:puzzle]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
+  # redirect to('/win') if @current_solution == @solution
   erb :index
 end
 
@@ -123,6 +124,10 @@ end
 
 get '/rules' do
   erb :rules
+end
+
+get '/win' do
+  'Congrats! You won!'
 end
 
 
