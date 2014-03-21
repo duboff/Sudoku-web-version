@@ -1,6 +1,10 @@
 require 'sinatra'
 require 'sinatra/partial'
 require 'rack-flash'
+require 'newrelic_rpm'
+
+# RACK_ENV = :production
+
 
 set :partial_template_engine, :erb
 use Rack::Flash
@@ -26,6 +30,7 @@ helpers do
   def cell_value(value)
     value.to_i == 0 ? '' : value
   end
+
 
   def read_only(puzzle_value)
     'readonly' if puzzle_value.to_i != 0
