@@ -6,8 +6,6 @@ GEM
     rack (1.5.2)
     rack-flash3 (1.0.5)
       rack
-    rack-handlers (0.7.0)
-      rack
     rack-protection (1.5.2)
       rack
     raindrops (0.13.0)
@@ -31,7 +29,6 @@ PLATFORMS
 DEPENDENCIES
   newrelic_rpm
   rack-flash3
-  rack-handlers
   shotgun
   sinatra
   sinatra-partial
