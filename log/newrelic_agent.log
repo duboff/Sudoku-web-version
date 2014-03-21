@@ -1879,3 +1879,153 @@
 [03/21/14 15:57:19 +0000 Mikhails-MacBook-Pro.local (14026)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
 [03/21/14 15:57:19 +0000 Mikhails-MacBook-Pro.local (14026)] INFO : Finished instrumentation
 [03/21/14 15:57:19 +0000 Mikhails-MacBook-Pro.local (14026)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Enabling the Request Sampler.
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Environment: development
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Dispatcher: unicorn
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Application: My Application
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Installing Net instrumentation
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Finished instrumentation
+[03/21/14 16:11:21 +0000 Mikhails-MacBook-Pro.local (14088)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Enabling the Request Sampler.
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Environment: development
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Dispatcher: unicorn
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Application: My Application
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Installing Net instrumentation
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Finished instrumentation
+[03/21/14 16:12:30 +0000 Mikhails-MacBook-Pro.local (14097)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Enabling the Request Sampler.
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Environment: development
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Dispatcher: unicorn
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Application: My Application
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Installing Net instrumentation
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Finished instrumentation
+[03/21/14 16:28:37 +0000 Mikhails-MacBook-Pro.local (14161)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Enabling the Request Sampler.
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Environment: development
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Dispatcher: unicorn
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Application: My Application
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Installing Net instrumentation
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Finished instrumentation
+[03/21/14 16:33:51 +0000 Mikhails-MacBook-Pro.local (14185)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Enabling the Request Sampler.
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Environment: development
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Dispatcher: unicorn
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Application: My Application
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Installing Net instrumentation
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Finished instrumentation
+[03/21/14 16:35:38 +0000 Mikhails-MacBook-Pro.local (14200)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Enabling the Request Sampler.
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Environment: development
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Dispatcher: unicorn
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Application: My Application
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Installing Net instrumentation
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Finished instrumentation
+[03/21/14 16:36:23 +0000 Mikhails-MacBook-Pro.local (14206)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Enabling the Request Sampler.
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Environment: development
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Dispatcher: unicorn
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Application: My Application
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Installing Net instrumentation
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Finished instrumentation
+[03/21/14 16:43:33 +0000 Mikhails-MacBook-Pro.local (14237)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Enabling the Request Sampler.
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Environment: development
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Dispatcher: unicorn
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Application: My Application
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Installing Net instrumentation
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Finished instrumentation
+[03/21/14 16:43:57 +0000 Mikhails-MacBook-Pro.local (14243)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Enabling the Request Sampler.
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Environment: development
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Dispatcher: unicorn
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Application: My Application
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Installing Net instrumentation
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Finished instrumentation
+[03/21/14 16:44:53 +0000 Mikhails-MacBook-Pro.local (14252)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Enabling the Request Sampler.
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Environment: development
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Dispatcher: unicorn
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Application: My Application
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] WARN : Agent configured not to send data in this environment.
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Installing Net instrumentation
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Installing Sinatra instrumentation
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Installing deferred Rack instrumentation
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Installing Unicorn instrumentation
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Finished instrumentation
+[03/21/14 16:45:13 +0000 Mikhails-MacBook-Pro.local (14258)] INFO : Doing deferred dependency-detection before Rack startup

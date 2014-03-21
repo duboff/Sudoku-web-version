@@ -90,8 +90,20 @@ def won?
   session[:current_solution] == session[:solution].join
 end
 
+def restart?
+  params[:restart] == 'true'
+end
+
+def restart
+  if restart?
+    session[:current_solution] = session[:puzzle] 
+    session[:check_solution] = nil
+    flash[:notice]=nil
+  end
+end
+
 def win_message
-  flash[:notice] = 'Congrats! You won!' 
+  flash[:notice] = 'Congrats! You won!' if won?
 end
 
 def give_up_message
@@ -102,10 +114,11 @@ end
 
 get '/' do
   session[:difficulty] ||= :easy
+  restart
   flash[:notice] ||= "I'd give you advice, but ..."
-  win_message if won?
   prepare_to_check_solution
   generate_new_puzzle_if_necessary(session[:difficulty])
+  win_message
   @current_solution = session[:current_solution] || session[:puzzle]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
@@ -116,7 +129,7 @@ post '/' do
   cells = box_order_to_row_order(params["cell"])
   session[:current_solution] = cells.map {|value| value.to_i }.join
   session[:check_solution] = !(params[:check] == 'false')
-  session[:current_solution] = session[:puzzle] if params[:restart] == 'true'
+  restart
   redirect to('/')
 end
 
