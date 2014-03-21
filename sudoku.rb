@@ -102,6 +102,7 @@ end
 
 get '/' do
   session[:difficulty] ||= :easy
+  flash[:notice] ||= "I'd give you advice, but you wouldn't listen. No one ever does."
   win_message if won?
   prepare_to_check_solution
   generate_new_puzzle_if_necessary(session[:difficulty])
