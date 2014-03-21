@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/partial'
 require 'rack-flash'
+
 set :partial_template_engine, :erb
 use Rack::Flash
 set :session_secret, "I'm the secre key to sign the cookie"
@@ -91,7 +92,7 @@ get '/' do
   @current_solution = session[:current_solution] || session[:puzzle]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
-  # redirect to('/win') if @current_solution == @solution
+  redirect to('/win') if @current_solution == @solution
   erb :index
 end
 
