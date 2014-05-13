@@ -1,6 +1,8 @@
 Sudoku-web-version
 ==================
 
+[![Code Climate](https://codeclimate.com/github/duboff/Sudoku-web-version.png)](https://codeclimate.com/github/duboff/Sudoku-web-version)
+
 Week 5 Project @ Makers Academy
 
 The goal was to use the [Sudoku solver engine](https://github.com/duboff/sudoku) to build a simple Sinatra sudoku web app.
