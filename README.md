@@ -19,6 +19,7 @@ The project does not include any integration tests, only unit tests for the game
 * HTML & CSS
 * ERB
 * Shotgun
+* Heroku deployment ([link](http://sudoku-game-duboff.herokuapp.com/))
 * New Relic
 
 ## Screenshot
